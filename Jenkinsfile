@@ -21,7 +21,7 @@ pipeline {
         string(name: 'QUERY_PATH', defaultValue:'kubernetes.namespace_name', description:'This is passed into the elasticsearch query. Schema is kubernetes.pod_namespace in vector. Should be fixed in GA.')
         // Cleanup
         booleanParam(name: 'CLEANUP_LOGGING', defaultValue: true, description: 'Delete logtest projects, elasticsearch app index, and clear fluentd buffers')
-        string(name: 'WORKLOADS_REPO', defaultValue:'https://github.com/RH-ematysek/workloads', description:'You can change this to point to your fork if needed.')
+        string(name: 'WORKLOADS_REPO', defaultValue:'https://github.com/SachinNinganure/workloads', description:'You can change this to point to your fork if needed.')
         string(name: 'WORKLOADS_REPO_BRANCH', defaultValue:'logtest_v45_svt', description:'You can change this to point to a branch on your fork if needed.')
         text(name: 'ENV_VARS', defaultValue: '', description:'''<p>
                Enter list of additional (optional) Env Vars you'd want to pass to the script, one pair on each line. <br>
