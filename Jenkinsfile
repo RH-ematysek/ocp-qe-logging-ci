@@ -21,7 +21,7 @@ pipeline {
         choice(name: 'LOG_COLLECTOR', choices: ['fluentd', 'vector'], description: 'Log collector to use.')
         string(name: 'SLEEP_DELAY', defaultValue: '10m', description: 'Time to sleep after previous steps to wait for nodes/CLO to be ready. Leave empty to skip')
         string(name: 'JENKINS_AGENT_LABEL',defaultValue:'oc49 || oc48 || oc47')
-        string(name: 'LOGGING_HELPER_REPO', defaultValue:'https://github.com/RH-ematysek/openshift-logtest-helper', description:'You can change this to point to your fork if needed.')
+        string(name: 'LOGGING_HELPER_REPO', defaultValue:'https://github.com/SachinNinganure/openshift-logtest-helper', description:'You can change this to point to your fork if needed.')
         string(name: 'LOGGING_HELPER_REPO_BRANCH', defaultValue:'master', description:'You can change this to point to a branch on your fork if needed.')
         text(name: 'ENV_VARS', defaultValue: '', description:'''<p>
                Enter list of additional (optional) Env Vars you'd want to pass to the script, one pair on each line. <br>
