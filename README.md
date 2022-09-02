@@ -1,3 +1,3 @@
 # ocp-qe-logging-ci
 
-Spiritual successor to ocp-qe-perscale-ci but only for logging
+ocp-qe-perscale-ci -logging perf testing the new path Vector to Lokistack
